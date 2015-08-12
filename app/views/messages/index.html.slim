@@ -1,0 +1,13 @@
+p
+  = cookies.signed[:username]
+p
+  #messages
+
+p
+  = form_for :message, url: messages_path, remote: true, id: 'messages-form' do |f|
+    p
+      = f.label :body, 'Введите сообщение:'
+    p
+      = f.text_field :body
+    p
+      = f.submit 'Отправить'

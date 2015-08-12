@@ -1,0 +1,7 @@
+= form_for :session, url: sessions_path do |f|
+  p
+    = f.label :username, 'Введите Ваш ник'
+  p
+    = f.text_field :username
+  p
+    = f.submit 'Ок'
